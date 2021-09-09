@@ -33,14 +33,14 @@ const buttonDecode1 = document.getElementById("decodeButton");
 buttonEncode1.addEventListener("click", ()=>{
   let textEncode = document.getElementById("cipherMessage").value;
   let offSet = parseInt(document.getElementById("boxNumber").value);
-  document.getElementById("cipherMessage").value = encode(textEncode, offSet);
+  document.getElementById("cipherMessage").value = cipher.encode(textEncode, offSet);
 });
 
 //funcion del boton descifrar
 buttonDecode1.addEventListener("click", ()=>{
   let textDecode = document.getElementById("cipherMessage").value;
   let offSet = parseInt(document.getElementById("boxNumber").value);
-  document.getElementById("cipherMessage").value = decode(textDecode, offSet);
+  document.getElementById("cipherMessage").value = cipher.decode(textDecode, offSet);
 });
 
 
